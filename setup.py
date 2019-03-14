@@ -1,11 +1,11 @@
 from setuptools import setup
 
-setup(name='FastAvroToPandas',
+setup(name='fastpandavro',
       version='0.1',
       description='Parallel conversion of Avro file to Pandas dataframe',
-      url='http://github.com/storborg/funniest',
+      url='https://ghe.aa.com/OR/AvroToPandas',
       author='Deepak Agrawal',
       author_email=['agrawal.deepankur@gmail.com','deepak.agrawal@aa.com'],
       license='MIT',
-      packages=['AvroToPandas'],
+      packages=['fastpandavro'],
       zip_safe=False)
