@@ -9,15 +9,15 @@ Converts avro file to pandas dataframe in parallel
 
 ## How to convert Avro file to Pandas dataframe
 ```
-import fastpandavro as fpa
+import AvroToPandas as atp
 import pandas as pd
-df = fpa.avro_to_pandas(fname="test/sample.avro")
+df = atp.avro_to_pandas(fname="test/sample.avro")
 print(df.shape)
 ```
 
 ## How to write pandas dataframe to avro file
 ```
-fpa.pandas_to_avro(df, "sample_output.avro", schema_file="test/schema.avsc")
+atp.pandas_to_avro(df, "output.avro", reader_schema="schema")
 ```
 
 
