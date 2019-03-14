@@ -1,4 +1,5 @@
 import itertools
+import json
 from multiprocessing import cpu_count
 
 from fastavro import writer, block_reader, parse_schema
@@ -24,7 +25,7 @@ def avro_to_pandas(fname, reader_schema=None, num_cores=None):
     return DataFrame(results)
 
 
-def pandas_to_avro(df, fname, reader_schema):
+def pandas_to_avro(df, fname, schema_file):
     '''
     Converts pandas dataframe to avro file
     :param df: Pandas dataframe
@@ -32,5 +33,7 @@ def pandas_to_avro(df, fname, reader_schema):
     :param reader_schema: schema of the avro file
     :return: Nothing to return
     '''
+    with open(schema_file) as schema:
+        reader_schema = json.load(schema)
     with open(fname, 'wb') as out:
         writer(out, parse_schema(reader_schema), df.to_dict('records'))
