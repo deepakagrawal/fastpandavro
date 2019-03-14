@@ -1,4 +1,4 @@
-# AvroToPandas
+# Fastpandavro
 Converts avro file to pandas dataframe in parallel
 
 
