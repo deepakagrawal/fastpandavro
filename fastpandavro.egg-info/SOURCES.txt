@@ -1,8 +1,0 @@
-README.md
-setup.py
-fastpandavro/__init__.py
-fastpandavro.egg-info/PKG-INFO
-fastpandavro.egg-info/SOURCES.txt
-fastpandavro.egg-info/dependency_links.txt
-fastpandavro.egg-info/not-zip-safe
-fastpandavro.egg-info/top_level.txt
