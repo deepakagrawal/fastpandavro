@@ -18,7 +18,7 @@ print(df.shape)
 ## How to write pandas dataframe to avro file
 ```
 atp.pandas_to_avro(df, "output.avro", reader_schema="schema")
-
+```
 
 
 
