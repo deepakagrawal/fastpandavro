@@ -1,6 +1,11 @@
 # Fastpandavro
 Converts avro file to pandas dataframe in parallel
 
+## Requirements
+- fastavro
+- joblib
+- multiporcessing
+- pandas
 
 ## Installation Instruction
 - Downlowd the repository and Extract to any location
