@@ -23,15 +23,15 @@ python setup.py install --user
 
 ## How to convert Avro file to Pandas dataframe
 ```
-import AvroToPandas as atp
+import fastpandavro as fpa
 import pandas as pd
-df = atp.avro_to_pandas(fname="test/sample.avro")
+df = fpa.avro_to_pandas(fname="test/sample.avro")
 print(df.shape)
 ```
 
 ## How to write pandas dataframe to avro file
 ```
-atp.pandas_to_avro(df, "output.avro", reader_schema="schema")
+fpa.pandas_to_avro(df, "output.avro", schema_file="test/schema.avsc")
 ```
 
 
