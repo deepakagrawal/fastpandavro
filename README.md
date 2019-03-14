@@ -16,7 +16,7 @@ Converts avro file to pandas dataframe in parallel
 # with admin rights
 python setup.py install
 
-#without admin rights
+# without admin rights
 python setup.py install --user
 ```
 
