@@ -10,7 +10,16 @@ Converts avro file to pandas dataframe in parallel
 ## Installation Instruction
 - Downlowd the repository and Extract to any location
 - Go to the folder and run following command
-```python setup.py install```
+
+ 
+```
+# with admin rights
+python setup.py install
+
+#without admin rights
+python setup.py install --user
+```
+
 
 ## How to convert Avro file to Pandas dataframe
 ```
