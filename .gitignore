@@ -1,0 +1,9 @@
+
+*.iml
+*.xml
+.idea/AvroToPandas.iml
+.idea/misc.xml
+.idea/workspace.xml
+fastpandavro.egg-info/dependency_links.txt
+fastpandavro.egg-info/SOURCES.txt
+fastpandavro.egg-info/top_level.txt
