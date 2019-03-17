@@ -8,4 +8,5 @@ setup(name='fastpandavro',
       author_email=['agrawal.deepankur@gmail.com','deepak.agrawal@aa.com'],
       license='MIT',
       packages=['fastpandavro'],
-      zip_safe=False)
+      zip_safe=False,
+      install_requires=['fastavro', 'pandas', 'multiprocessing', 'joblib'])
