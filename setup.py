@@ -9,4 +9,4 @@ setup(name='fastpandavro',
       license='MIT',
       packages=['fastpandavro'],
       zip_safe=False,
-      install_requires=['fastavro', 'pandas', 'multiprocessing', 'joblib'])
+      install_requires=['fastavro', 'joblib'])
